@@ -1,0 +1,14 @@
+class fibo
+ {
+         public static void main(String arg[])
+         {
+           int i,b=1,a=0,c;
+           for(i=0;i<5;i++)
+             {
+               c=a+b;
+               a=b;
+               b=c;
+               System.out.println("fibo:"+c);
+             }
+         }
+ }
