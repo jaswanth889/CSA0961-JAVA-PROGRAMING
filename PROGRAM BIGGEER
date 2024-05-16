@@ -1,0 +1,21 @@
+import java.util.*;
+class even
+{
+        public static void main(String arg[])
+          {
+            Scanner sc=new Scanner(System.in);
+            int a,b;
+            System.out.println("enter a");
+            a=sc.nextInt();
+            System.out.println("enter b");
+            b=sc.nextInt();
+            if(n%2==0)
+             {
+               System.out.println("n is even="+n);
+             }
+            else
+             {
+              System.out.println("n is odd"+b);
+             }
+          }
+}
