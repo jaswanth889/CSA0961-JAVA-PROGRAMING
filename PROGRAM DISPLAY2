@@ -1,0 +1,11 @@
+class display2
+ {
+         public static void main(String arg[])
+         {
+           int i,b=1,a=0,c;
+           for(i=9;i>=0;i--)
+             {
+               System.out.println("display2:"+i);
+             }
+         }
+ }
