@@ -1,0 +1,13 @@
+import java.util.*;
+class inch
+{
+public static void main(String arg[])
+{
+Scanner sc=new Scanner(System.in);
+float inch,meter;
+System.out.println("enter inch");
+inch=sc.nextFloat();
+meter=inch*0.0254;
+System.out.println("inch to meter="+meter);
+}
+}
