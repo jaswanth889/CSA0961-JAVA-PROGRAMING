@@ -1,23 +1,22 @@
 import java.util.*;
 class GOAT{
-    public static boolean canConstruct(String ransomNote, String magazine) {
-       int[] alphabet = new int[26];
-        for (char c : ransomNote.toCharArray()) {
-            int i = magazine.indexOf(c, alphabet[c % 26]);
-            if (i == -1) 
-		return false;
-            alphabet[c % 26] = i + 1;
-        }
-        return true;
-    }
-	
-	public static void main(String arg[]){
-		if(canConstruct("a","a")==true){
-			System.out.println("True");
-		}
-		else{
-			System.out.println("False");
-		}
-		
+public static void main (String[] args) {
+	Scanner s = new Scanner(System.in);
+	char ch;
+	String str;
+	char k;
+	int i;
+	System.out.print("Enter the word: ");
+	str = s.nextLine();	
+	System.out.print("Enter the search key: ");
+	k = s.next().charAt(0);
+	for (i=0; i<str.length(); i++)
+	{
+	ch= str.charAt(i); 
+	if(ch == k){
+	System.out.print("Index is:"+i);
+	}
+	}
 	}
 }
+

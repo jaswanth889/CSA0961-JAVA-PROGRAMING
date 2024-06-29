@@ -1,27 +1,25 @@
 import java.util.*;
-class Student{
-	int a,b,c,d,e,reg,sum,avg;
-	String j;
-	Student(int x, int y, int z, int w, int v, int u, String k){
-		a = x;
-		b = y;
-		c = z;
-		d = w;
-		e = v;
-		reg = u;
-		j = k;
-		}
-	void Cal(){
-		sum = a+b+c+d+e;
-		avg = sum/5;
-		}
-	void display(){
-		System.out.println("Total Marks:"+sum);
-		System.out.println("Average:"+avg);
-		}
-public static void main(String arg[]){
-	Student m = new Student(98,99,97,87,92,192210314,"JAYARAM");
-	m.Cal();
-	m.display();
-	}
+class GOAT{
+    public static int count(String s) {
+        s = s.toLowerCase();
+        int n = s.length();
+        int[] a = new int[26];
+	int i,index,count=0;
+        for(i=0;i<n;i++){
+            index = s.charAt(i) - 'a'; 
+            a[index] = 1;
+        } 
+        for (i = 0; i < 26; i++) { 
+            if (a[i] == 1) {
+                count += 1;
+            }
+        }
+        return count;
+    }
+    public static void main(String[] args) {
+	Scanner s = new Scanner(System.in);
+        String sc;
+	sc = s.nextLine();
+        System.out.println(count(sc));
+    }
 }

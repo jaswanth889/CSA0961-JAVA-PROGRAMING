@@ -1,24 +1,23 @@
-import java.util.Scanner;
-class Tax{
-    public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        System.out.print("Enter the income: ");
-        double income = scanner.nextDouble();
-        double tax = 0.0;
-        double taxableIncome = 0.0;
-	if(income > 250000){
-		taxableIncome = income - 250000;
-	}
-        if (taxableIncome <= 250000) {
-            tax = 0.0;
-        } else if (taxableIncome <= 500000) {
-            tax = taxableIncome * 0.10;
-        } else if (taxableIncome <= 1000000) {
-            tax = (taxableIncome * 0.20);
-        } else {
-            tax = (taxableIncome * 0.30);
+import java.util.*;
+class GOAT {
+    public static void main(String args[]) {
+        int r1 = 2, c1 = 2,i,j,k;
+        int r2 = 2, c2 = 2;
+        int[][] a = { {1, 2}, {5, 3}};
+        int[][] b = { {2, 3}, {4, 1}};
+
+        int[][] c= new int[r1][c2];
+        for(i = 0; i < r1; i++) {
+            for (j = 0; j < c2; j++) {
+                    c[i][j] = a[i][j] + b[i][j];
+            }
         }
-        System.out.println("Taxable Income: " + taxableIncome);
-        System.out.println("Tax= " + tax);
+        System.out.println("Multiplication of two matrices is: ");
+        for(i = 0; i < r1; i++) {
+            for (j = 0; j < c2; j++) {
+                System.out.print(c[i][j] + "    ");
+            }
+            System.out.println();
+        }
     }
 }

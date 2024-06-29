@@ -1,21 +1,20 @@
+import java.util.*;
 class GOAT{
-
-    public static void main(String[] args) {
-        String s = "Hello World  ";
-        System.out.println("The length of the last word is: " + lengthOfLastWord(s));
-    }
-
-    public static int lengthOfLastWord(String s) {
-        int length = 0;
-        int end = s.length() - 1;
-        while (end >= 0 && s.charAt(end) == ' ') {
-            end--;
-        }
-        while (end >= 0 && s.charAt(end) != ' ') {
-            length++;
-            end--;
-        }
-
-        return length;
-    }
+public static void main (String[] args) {
+	Scanner s = new Scanner(System.in);
+	char ch;
+	String str;
+	int k=0,i;
+	System.out.print("Enter the word: ");
+	str = s.nextLine();
+	for (i=0; i<str.length(); i++)
+	{
+	ch= str.charAt(i); 
+	if(ch == 'a'||ch == 'e'|| ch == 'i'|| ch == 'o'|| ch == 'u'||ch == 'A'||ch == 'E'|| ch == 'I'|| ch == 'O'|| ch == 'U'){
+	k++;
+	}
+	}
+	System.out.print("No.of Vowels:"+k);
+	}
 }
+
